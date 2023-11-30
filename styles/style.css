@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Poppins:ital,wght@1,100&display=swap");
+
+:root {
+    --widthBox: 250px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Handlee;
+    box-sizing: border-box;
+}
+
+*,
+::placeholder {
+    color: #fff;
+}
+
+body {
+    background: #474747;
+}
+
+.btnActive:active {
+    transform: scale(0.96);
+}
+
+.container {
+    width: 100%;
+    padding: 50px;
+}
+
+.container .notes {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--widthBox), 1fr));
+
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start; */
+}
+
+.container .notes .create,
+.container .notes .note {
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.6;
+    border-radius: 3px;
+    position: relative;
+    height: var(--widthBox);
+}
+
+.container .notes .create {
+    display: grid;
+    font-size: 6em;
+    background: #656565;
+    place-content: center;
+}
+
+.container .notes .create .create-box {
+    display: none;
+}
+
+.container .notes .create .create-box textarea {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    resize: none;
+    border: none;
+    outline: none;
+    z-index: 999;
+    padding: 20px;
+    background: #7a7a7a;
+}
+
+.container .notes .note {
+    position: relative;
+}
+
+.container .notes .note::after {
+    content: 'Double click to remove this note';
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    font-size: 12px;
+    word-spacing: 3px;
+    place-content: center;
+    background: rgba(0, 0, 0, 0.13);
+    opacity: 0;
+    transition: .2s;
+}
+
+.container .notes .note:hover::after {
+    opacity: 1;
+}
+
+.container .notes .note>span {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
