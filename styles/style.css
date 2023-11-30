@@ -29,6 +29,12 @@ body {
     padding: 50px;
 }
 
+@media (max-width: 425px) {
+    .container {
+        padding: 10px;
+    }
+}
+
 .container .notes {
     gap: 20px;
     display: grid;
