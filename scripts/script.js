@@ -21,6 +21,7 @@ function content(e) {
       // Create a new note main function
       create_note(userInput);
       createBox.style.display = "none";
+      new Audio("./sounds/click.mp3").play();
     }
     reset_id();
   }
