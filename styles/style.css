@@ -26,12 +26,12 @@ body {
 
 .container {
     width: 100%;
-    padding: 50px;
+    padding: 50px 50px 150px;
 }
 
 @media (max-width: 425px) {
     .container {
-        padding: 10px;
+        padding: 10px 10px 100px;
     }
 }
 
