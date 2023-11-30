@@ -33,11 +33,6 @@ body {
     gap: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--widthBox), 1fr));
-
-    /* display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start; */
 }
 
 .container .notes .create,
@@ -50,6 +45,7 @@ body {
     border-radius: 3px;
     position: relative;
     height: var(--widthBox);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .container .notes .create {
