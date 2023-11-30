@@ -29,7 +29,7 @@ body {
     padding: 50px 50px 150px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
     .container {
         padding: 10px 10px 100px;
     }
