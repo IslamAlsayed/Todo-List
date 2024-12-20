@@ -46,7 +46,7 @@ body {
     width: 100%;
     padding: 20px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6;
     border-radius: 3px;
     position: relative;
@@ -56,7 +56,6 @@ body {
 
 .container .notes .create {
     display: grid;
-    font-size: 6em;
     background: #656565;
     place-content: center;
 }
@@ -109,4 +108,19 @@ body {
     position: absolute;
     top: 5px;
     right: 5px;
+}
+
+@media (max-width: 500px) {
+    .container .notes .note {
+        height: fit-content;
+    }
+
+    .container .notes .note::after {
+        width: calc(100% + 40px);
+        height: 30px;
+        position: relative;
+        bottom: -20px;
+        left: -20px;
+        opacity: 1;
+    }
 }
