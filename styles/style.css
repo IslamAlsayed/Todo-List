@@ -56,6 +56,7 @@ body {
 
 .container .notes .create {
     display: grid;
+    font-size: 6em;
     background: #656565;
     place-content: center;
 }
